@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>开庭公告</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/template-web.js"></script>
+    <!-- <script type="text/javascript" src="js/dialog.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="js/dateformate.js"></script> -->
+
+    <script id="indexTpl" type="text/template">
+        {{each list}}
+              <tr>
+                 <td>{{$value.number}}</td>
+                 <td>{{$value.law_date}}</td>
+                 <td>{{$value.reason}}</td>
+                 <td>{{$value.identity}}</td>
+                 <td>{{$value.content}}</td>      
+              </tr>
+        {{/each}}
+    </script>
+</head>
+<body>
+  
+  <div class = "title">
+      开庭公告    
+  </div>
+    <div class = "list">
+      <table>
+            <tbody id="dataList">
+                
+            </tbody>
+
+      </table>
+    </div>
+  
+</body>
+</html>
